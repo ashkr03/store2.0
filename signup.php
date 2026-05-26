@@ -21,7 +21,7 @@ $password = "LZpa1xl2FvzGOJweli4Z";
 $port = 3306;
 
 // Database connection
-$conn = new mysqli($host, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 // Connection check
 if ($conn->connect_error) {
