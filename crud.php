@@ -16,7 +16,7 @@ $password = "LZpa1xl2FvzGOJweli4Z";
 $port = 3306;
 
 
-$conn = new mysqli($host, $username, $password, $database);
+$conn = new mysqli($servername, $username, $password, $dbname, $port);
 
 if ($conn->connect_error) {
     echo json_encode([
